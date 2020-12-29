@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.geo.kronos">
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kronos">
+        <activity
+            android:name=".winCourse"
+            android:label="@string/title_activity_win_course"
+            android:theme="@style/Theme.Kronos.NoActionBar"></activity>
+        <activity
+            android:name=".create_courses"
+            android:label="@string/title_activity_create_courses"
+            android:theme="@style/Theme.Kronos.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
